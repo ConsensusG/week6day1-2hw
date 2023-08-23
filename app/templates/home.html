@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+    <div class="mt-4 home_content text-center">
+        <h1>Begin your Pokemon adventure!</h1>
+        <p>Click the button below to start your journey!</p>
+        <a href="{{ url_for('main.pokemon_search') }}" class="btn btn-primary btn-lg mt-3">
+            Start Adventure
+        </a>
+    </div>
+{% endblock %}
